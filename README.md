@@ -1,1 +1,0 @@
-# 05TPLP002-AhmadFaizZaidan

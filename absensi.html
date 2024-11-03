@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>UTS Ahmad Faiz Zaidan</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Universitas Pamulang</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Menu Karyawan
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="karyawan.html">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <span>Karyawan</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="jabatan.html">
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    <span>Jabatan</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="divisi.html">
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    <span>Divisi</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Menu Absensi
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="absensi.html">
+                    <i class="fas fa-fw fa-calendar-check" aria-hidden="true"></i>
+                    <span>Absensi</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="izin.html">
+                    <i class="fas fa-fw fa-calendar-plus" aria-hidden="true"></i>
+                    <span>Izin</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="lembur.html">
+                    <i class="fas fa-fw fa-calendar-plus" aria-hidden="true"></i>
+                    <span>Lembur</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Menu Penggajian
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="slipgaji.html">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    <span>Slip Gaji</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="printgaji.html">
+                    <i class="fa fa-print" aria-hidden="true"></i>
+                    <span>Cetak Slip Gaji</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Menu Laporan
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="cetaklaporan.html">
+                    <i class="fa fa-file" aria-hidden="true"></i>
+                    <span>Cetak Laporan</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+            <!-- Sidebar Message -->
+            <div class="sidebar-card d-none d-lg-flex">
+                <a class="btn btn-success btn-sm" href="login.html">Log out</a>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <html>
+            <head>
+                <title>Data Divisi</title>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f8f9fa;
+                    }
+                    .container {
+                        width: 90%;
+                        margin: 20px auto;
+                        background-color: #fff;
+                        padding: 20px;
+                        border-radius: 8px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        position: relative;
+                    }
+                    h1 {
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                    }
+                    .btn-add {
+                        background-color: #007bff;
+                        color: #fff;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 999px;
+                        text-decoration: none;
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                    }
+                    .btn-add:hover {
+                        background-color: #0056b3;
+                    }
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 20px;
+                    }
+                    table th, table td {
+                        padding: 10px;
+                        text-align: left;
+                        border-bottom: 1px solid #ddd;
+                    }
+                    table th {
+                        background-color: #f2f2f2;
+                    }
+                    .action-icons {
+                        font-size: 18px;
+                    }
+                    .action-icons a {
+                        margin-right: 10px;
+                        color: #007bff;
+                    }
+                    .action-icons a:hover {
+                        color: #0056b3;
+                    }
+                    .action-icons .delete {
+                        color: #dc3545;
+                    }
+                    .action-icons .delete:hover {
+                        color: #c82333;
+                    }
+                    .table-controls {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 10px;
+                    }
+                    .table-controls select, .table-controls input {
+                        padding: 5px;
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                    }
+                </style>
+            </head>
+
+            <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Divisi Management</title>
+
+    <!-- Custom fonts and styles for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <!-- Sidebar - Omitted for brevity -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div class="container">
+                <h1>Data Absensi</h1>
+                <hr style="border: none; height: 1px; background-color: #333; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);">
+                <div class="table-controls">
+                    <div>
+                        Show 
+                        <select>
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                        </select>
+                        entries
+                    </div>
+                    <div>
+                        Search: <input type="text" onkeyup="searchTable(this)">
+                    </div>
+                </div>
+                <table id="absensiTable">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Karyawan</th>
+                            <th>Tanggal</th>
+                            <th>Lokasi Absen</th>
+                            <th>Jam Masuk</th>
+                            <th>Jam Keluar</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ahmad Faiz</td>
+                            <td>2024-11-01</td>
+                            <td>Office</td>
+                            <td>08:00</td>
+                            <td>17:00</td>
+                            <td class="action-icons">
+                                <a href="#" onclick="editAbsensi(this)"><i class="fas fa-edit"></i></a>
+                                <a href="#" class="delete" onclick="deleteAbsensi(this)"><i class="fas fa-times"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dika Parung</td>
+                            <td>2024-11-01</td>
+                            <td>Office</td>
+                            <td>08:00</td>
+                            <td>17:00</td>
+                            <td class="action-icons">
+                                <a href="#" onclick="editAbsensi(this)"><i class="fas fa-edit"></i></a>
+                                <a href="#" class="delete" onclick="deleteAbsensi(this)"><i class="fas fa-times"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Rafly Ciputat</td>
+                            <td>2024-11-01</td>
+                            <td>Office</td>
+                            <td>08:00</td>
+                            <td>17:00</td>
+                            <td class="action-icons">
+                                <a href="#" onclick="editAbsensi(this)"><i class="fas fa-edit"></i></a>
+                                <a href="#" class="delete" onclick="deleteAbsensi(this)"><i class="fas fa-times"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Yovan Fiqri</td>
+                            <td>2024-11-01</td>
+                            <td>Office</td>
+                            <td>08:00</td>
+                            <td>17:00</td>
+                            <td class="action-icons">
+                                <a href="#" onclick="editAbsensi(this)"><i class="fas fa-edit"></i></a>
+                                <a href="#" class="delete" onclick="deleteAbsensi(this)"><i class="fas fa-times"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Pian Pancoran</td>
+                            <td>2024-11-01</td>
+                            <td>Office</td>
+                            <td>08:00</td>
+                            <td>17:00</td>
+                            <td class="action-icons">
+                                <a href="#" onclick="editAbsensi(this)"><i class="fas fa-edit"></i></a>
+                                <a href="#" class="delete" onclick="deleteAbsensi(this)"><i class="fas fa-times"></i></a>
+                            </td>
+                        </tr>
+                        <!-- Additional rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Adding/Editing Absensi -->
+    <div class="modal fade" id="absensiModal" tabindex="-1" role="dialog" aria-labelledby="absensiModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="absensiModalLabel">Add/Edit Absensi</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="absensiForm">
+                        <div class="form-group">
+                            <label for="namaKaryawan">Nama Karyawan</label>
+                            <input type="text" class="form-control" id="namaKaryawan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tanggal">Tanggal</label>
+                            <input type="date" class="form-control" id="tanggal" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lokasiAbsen">Lokasi Absen</label>
+                            <input type="text" class="form-control" id="lokasiAbsen" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jamMasuk">Jam Masuk</label>
+                            <input type="time" class="form-control" id="jamMasuk" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jamKeluar">Jam Keluar</label>
+                            <input type="time" class="form-control" id="jamKeluar" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="saveAbsensi()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <script>
+        let editAbsensiRow = null;
+
+        function addAbsensi() {
+            editAbsensiRow = null;
+            document.getElementById("absensiForm").reset();
+            $('#absensiModal').modal('show');
+        }
+
+        function editAbsensi(element) {
+            editAbsensiRow = element.closest('tr');
+            document.getElementById("namaKaryawan").value = editAbsensiRow.cells[1].innerText;
+            document.getElementById("tanggal").value = editAbsensiRow.cells[2].innerText;
+            document.getElementById("lokasiAbsen").value = editAbsensiRow.cells[3].innerText;
+            document.getElementById("jamMasuk").value = editAbsensiRow.cells[4].innerText;
+            document.getElementById("jamKeluar").value = editAbsensiRow.cells[5].innerText;
+            $('#absensiModal').modal('show');
+        }
+
+        function saveAbsensi() {
+            const nama = document.getElementById("namaKaryawan").value;
+            const tanggal = document.getElementById("tanggal").value;
+            const lokasi = document.getElementById("lokasiAbsen").value;
+            const jamMasuk = document.getElementById("jamMasuk").value;
+            const jamKeluar = document.getElementById("jamKeluar").value;
+            if (!editAbsensiRow) {
+                const table = document.getElementById("absensiTable").getElementsByTagName("tbody")[0];
+                const newRow = table.insertRow();
+                newRow.innerHTML = `
+                    <td>${table.rows.length}</td>
+                    <td>${nama}</td>
+                    <td>${tanggal}</td>
+                    <td>${lokasi}</td>
+                    <td>${jamMasuk}</td>
+                    <td>${jamKeluar}</td>
+                    <td class="action-icons">
+                        <a href="#" onclick="editAbsensi(this)"><i class="fas fa-edit"></i></a>
+                        <a href="#" class="delete" onclick="deleteAbsensi(this)"><i class="fas fa-times"></i></a>
+                    </td>`;
+            } else {
+                editAbsensiRow.cells[1].innerText = nama;
+                editAbsensiRow.cells[2].innerText = tanggal;
+                editAbsensiRow.cells[3].innerText = lokasi;
+                editAbsensiRow.cells[4].innerText = jamMasuk;
+                editAbsensiRow.cells[5].innerText = jamKeluar;
+            }
+            $('#absensiModal').modal('hide');
+        }
+
+        function deleteAbsensi(element) {
+            element.closest('tr').remove();
+        }
+
+        function searchTable(input) {
+            const filter = input.value.toLowerCase();
+            const rows = document.querySelectorAll("#absensiTable tbody tr");
+            rows.forEach(row => {
+                row.style.display = row.textContent.toLowerCase().includes(filter) ? "" : "none";
+            });
+        }
+    </script>
+</body>
+</html>

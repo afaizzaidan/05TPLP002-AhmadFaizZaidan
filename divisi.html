@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>UTS Ahmad Faiz Zaidan</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Universitas Pamulang</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Menu Karyawan
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="karyawan.html">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <span>Karyawan</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="jabatan.html">
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    <span>Jabatan</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="divisi.html">
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    <span>Divisi</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Menu Absensi
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="absensi.html">
+                    <i class="fas fa-fw fa-calendar-check" aria-hidden="true"></i>
+                    <span>Absensi</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="izin.html">
+                    <i class="fas fa-fw fa-calendar-plus" aria-hidden="true"></i>
+                    <span>Izin</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="lembur.html">
+                    <i class="fas fa-fw fa-calendar-plus" aria-hidden="true"></i>
+                    <span>Lembur</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Menu Penggajian
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="slipgaji.html">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    <span>Slip Gaji</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="printgaji.html">
+                    <i class="fa fa-print" aria-hidden="true"></i>
+                    <span>Cetak Slip Gaji</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Menu Laporan
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="cetaklaporan.html">
+                    <i class="fa fa-file" aria-hidden="true"></i>
+                    <span>Cetak Laporan</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+            <!-- Sidebar Message -->
+            <div class="sidebar-card d-none d-lg-flex">
+                <a class="btn btn-success btn-sm" href="login.html">Log out</a>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <html>
+            <head>
+                <title>Data Divisi</title>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f8f9fa;
+                    }
+                    .container {
+                        width: 90%;
+                        margin: 20px auto;
+                        background-color: #fff;
+                        padding: 20px;
+                        border-radius: 8px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        position: relative;
+                    }
+                    h1 {
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                    }
+                    .btn-add {
+                        background-color: #007bff;
+                        color: #fff;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 999px;
+                        text-decoration: none;
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                    }
+                    .btn-add:hover {
+                        background-color: #0056b3;
+                    }
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 20px;
+                    }
+                    table th, table td {
+                        padding: 10px;
+                        text-align: left;
+                        border-bottom: 1px solid #ddd;
+                    }
+                    table th {
+                        background-color: #f2f2f2;
+                    }
+                    .action-icons {
+                        font-size: 18px;
+                    }
+                    .action-icons a {
+                        margin-right: 10px;
+                        color: #007bff;
+                    }
+                    .action-icons a:hover {
+                        color: #0056b3;
+                    }
+                    .action-icons .delete {
+                        color: #dc3545;
+                    }
+                    .action-icons .delete:hover {
+                        color: #c82333;
+                    }
+                    .table-controls {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 10px;
+                    }
+                    .table-controls select, .table-controls input {
+                        padding: 5px;
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                    }
+                </style>
+            </head>
+
+            <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Divisi Management</title>
+
+    <!-- Custom fonts and styles for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <!-- Sidebar - Omitted for brevity -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div class="container">
+                <h1>Data Divisi</h1>
+                <a href="#" class="btn-add" onclick="addDivision()">+ Tambah Divisi</a>
+
+                <hr style="border: none; height: 1px; background-color: #333; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);">
+                <div class="table-controls">
+                    <div>
+                        Show 
+                        <select>
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                        </select>
+                        entries
+                    </div>
+                    <div>
+                        Search: <input type="text" onkeyup="searchTable(this)">
+                    </div>
+                </div>
+                <table id="divisionTable">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Kode Divisi</th>
+                            <th>Nama Divisi</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>DIV001</td>
+                            <td>DivUmum</td>
+                            <td class="action-icons">
+                                <a href="#" onclick="editDivision(this)"><i class="fas fa-edit"></i></a>
+                                <a href="#" class="delete" onclick="deleteDivision(this)"><i class="fas fa-times"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>DIV002</td>
+                            <td>DivOperasional</td>
+                            <td class="action-icons">
+                                <a href="#" onclick="editDivision(this)"><i class="fas fa-edit"></i></a>
+                                <a href="#" class="delete" onclick="deleteDivision(this)"><i class="fas fa-times"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>DIV003</td>
+                            <td>DivLogistik</td>
+                            <td class="action-icons">
+                                <a href="#" onclick="editDivision(this)"><i class="fas fa-edit"></i></a>
+                                <a href="#" class="delete" onclick="deleteDivision(this)"><i class="fas fa-times"></i></a>
+                            </td>
+                        </tr>
+                        <!-- Additional rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Adding/Editing Division -->
+    <div class="modal fade" id="divisionModal" tabindex="-1" role="dialog" aria-labelledby="divisionModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="divisionModalLabel">Add/Edit Division</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="divisionForm">
+                        <div class="form-group">
+                            <label for="kodeDivisi">Kode Divisi</label>
+                            <input type="text" class="form-control" id="kodeDivisi" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="namaDivisi">Nama Divisi</label>
+                            <input type="text" class="form-control" id="namaDivisi" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="saveDivision()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <script>
+        let editRow = null;
+
+        function addDivision() {
+            editRow = null;
+            document.getElementById("divisionForm").reset();
+            $('#divisionModal').modal('show');
+        }
+
+        function editDivision(element) {
+            editRow = element.closest('tr');
+            document.getElementById("kodeDivisi").value = editRow.cells[1].innerText;
+            document.getElementById("namaDivisi").value = editRow.cells[2].innerText;
+            $('#divisionModal').modal('show');
+        }
+
+        function saveDivision() {
+            const kode = document.getElementById("kodeDivisi").value;
+            const nama = document.getElementById("namaDivisi").value;
+            if (!editRow) {
+                const table = document.getElementById("divisionTable").getElementsByTagName("tbody")[0];
+                const newRow = table.insertRow();
+                newRow.innerHTML = `
+                    <td>${table.rows.length}</td>
+                    <td>${kode}</td>
+                    <td>${nama}</td>
+                    <td class="action-icons">
+                        <a href="#" onclick="editDivision(this)"><i class="fas fa-edit"></i></a>
+                        <a href="#" class="delete" onclick="deleteDivision(this)"><i class="fas fa-times"></i></a>
+                    </td>`;
+            } else {
+                editRow.cells[1].innerText = kode;
+                editRow.cells[2].innerText = nama;
+            }
+            $('#divisionModal').modal('hide');
+        }
+
+        function deleteDivision(element) {
+            if (confirm("Are you sure you want to delete this division?")) {
+                const row = element.closest('tr');
+                row.parentNode.removeChild(row);
+            }
+        }
+
+        function searchTable(input) {
+            const filter = input.value.toLowerCase();
+            const rows = document.querySelectorAll("#divisionTable tbody tr");
+            rows.forEach(row => {
+                const cells = row.getElementsByTagName("td");
+                const match = Array.from(cells).some(cell => cell.innerText.toLowerCase().includes(filter));
+                row.style.display = match ? "" : "none";
+            });
+        }
+    </script>
+</body>
+</html>
